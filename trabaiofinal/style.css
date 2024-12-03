@@ -147,3 +147,53 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Definindo a posição da lista no canto inferior direito da tela */
+.lista-botoes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo dos botões */
+.botao {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+/* Estilo do botão + (azul) */
+#botao-mais {
+  background-color: blue;
+  color: white;
+}
+
+/* Estilo do botão - (vermelho) */
+#botao-menos {
+  background-color: red;
+  color: white;
+}
+
+/* Estilo do botão Nome (cinza) */
+#botao-nome {
+  background-color: gray;
+  color: white;
+}
+
+/* Efeito quando o botão é clicado */
+.botao:active {
+  transform: scale(0.95);
+}
+
+/* Esconde todos os botões, exceto o selecionado */
+.hidden {
+  display: none;
+}
+
