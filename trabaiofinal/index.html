@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Pesquise aqui..." />
+        <input type="text" id="search-bar" placeholder="Pesquise aqui..." oninput="applySearchFilter()" />
       </div>
     </header>
     <main>
@@ -25,9 +25,7 @@
       <button id="botao-mais" class="botao" onclick="mudarBotao('mais')">+</button>
       <button id="botao-menos" class="botao" onclick="mudarBotao('menos')">-</button>
       <button id="botao-nome" class="botao" onclick="mudarBotao('nome')">Nome</button>
-  </div>
-
-    <div id="app"></div>
+    </div>
     <script type="module" src="/FFazerTabelinhas.js"></script>
   </body> 
 </html>
